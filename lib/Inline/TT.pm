@@ -25,8 +25,6 @@ sub register {
 
 sub validate { }
 
-
-
 sub build {
     my $self = shift;
     my $code = $self->__compile($self->{API}->{code});
@@ -157,12 +155,14 @@ Inline::TT - use TT BLOCK as your Perl sub
 =head1 DESCRIPTION
 
 Template-Toolkit is not just a Templating Engine. It's a
-B<language>. Yep, Inline::TT is a Inline plugin to aloow you to code
+B<language>. Yep, Inline::TT is a Inline plugin to allow you to code
 your Perl subs in TT.
 
 =head1 AUTHOR
 
-Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
+Original idea by IKEBE Tomohiro E<lt>ikechin@0xfa.comE<gt>
+
+Code implemented by Tatsuhiko Miyagawa E<lt>miyagawa@bulknews.netE<gt>
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

@@ -4,8 +4,8 @@ NAME
 SYNOPSIS
       use Inline 'TT';
 
-      $calc = add(args => [ 0, 1 ]);                      # 2
-      $jarh = rubyish(str => "Just another Perl Hacker"); # "Just/another/Ruby/hacker"
+      print add(args => [ 0, 1 ]);                      # 1
+      print rubyish(str => "Just another Perl Hacker"); # "Just/another/Ruby/hacker"
 
       __END__
       __TT__
@@ -26,10 +26,12 @@ SYNOPSIS
 
 DESCRIPTION
     Template-Toolkit is not just a Templating Engine. It's a language. Yep,
-    Inline::TT is a Inline plugin to aloow you to code your Perl subs in TT.
+    Inline::TT is a Inline plugin to allow you to code your Perl subs in TT.
 
 AUTHOR
-    Tatsuhiko Miyagawa <miyagawa@bulknews.net>
+    Original idea by IKEBE Tomohiro <ikechin@0xfa.com>
+
+    Code implemented by Tatsuhiko Miyagawa <miyagawa@bulknews.net>
 
     This library is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
