@@ -2,7 +2,7 @@ package Inline::TT;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 use base qw(Inline);
 use IO::File;
@@ -57,7 +57,7 @@ sub info { }
 
 sub __compile {
     my($self, $text) = @_;
-    my $parser   = Template::Parser->new({ PRE_CHOMP => 1, POST_CHOMP => 1 });
+    my $parser   = Template::Parser->new({ PRE_CHOMP => 1 });
     my $content  = $parser->parse($text) or croak $parser->error;
     my $document = $self->__document($content);
 
